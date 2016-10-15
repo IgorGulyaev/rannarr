@@ -7,9 +7,19 @@ require_once 'connect.php';
 	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251" />
 	<meta content="yes" name="apple-mobile-web-app-capable" />
 	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
-	<TITLE>Test site</TITLE>
-	<link rel="stylesheet" href="//www.ukraine.com.ua/static/parking/style.css" type="text/css" />
+	<TITLE>ZEN Events</TITLE>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="source/css/bootstrap.min.css">
+	<link rel="stylesheet" href="source/css/bootstrap.min.css.map">
+	<link rel="stylesheet" href="source/css/tether.min.css">
+	<link rel="stylesheet" href="source/css/tether-theme-arrows.min.css">
+	<link rel="stylesheet" href="source/css/tether-theme-basic.min.css">
+	<link rel="stylesheet" href="source/css/style.css">
+	<script src="source/js/tether.min.js"></script>
+	<script src="source/js/react.js"></script>
+	<script src="source/js/react-dom.js"></script>
+	<script src="source/js/browser.min.js"></script>
+	<script src="source/js/bootstrap.min.js"></script>
 	<script>
 		window.fbAsyncInit = function() {
 			FB.init({
@@ -27,44 +37,6 @@ require_once 'connect.php';
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-	<style type="text/css">
-		div.container {
-			max-width: 900px;
-			width: 100%;
-		}
-		#demo {
-			display: -webkit-box;
-			display: -moz-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-flex-wrap: wrap;
-			flex-wrap: wrap;
-		}
-		#demo > div {
-			width: 28%;
-			padding: 15px;
-			margin: 1%;
-			margin-bottom: 10px;
-			background-color: beige;
-		}
-		#map {
-			height: 500px;
-			width: 100%;
-		}
-		#loader {
-			position: fixed;
-			top: 0;
-			left: 0;
-			display: none;
-			height: 100%;
-			width: 100%;
-			background-color: rgba(255,255,255,0.7);
-			background-image: url("loader.gif");
-			background-repeat: no-repeat;
-			background-position: center center;
-		}
-	</style>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -75,7 +47,7 @@ require_once 'connect.php';
 	js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7&appId=1909067872653575";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="container">
+<div class="wrapper">
 
 	<div class="content">
 

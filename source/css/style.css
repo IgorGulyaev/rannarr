@@ -1,0 +1,32 @@
+#demo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+#demo > div {
+    width: 28%;
+    padding: 15px;
+    margin: 1%;
+    margin-bottom: 10px;
+    background-color: beige;
+}
+#map {
+    height: 500px;
+    width: 100%;
+}
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    background-image: url("loader.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
