@@ -72,6 +72,7 @@ header {
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 50%;
 }
 #demo > div {
     width: 28%;
@@ -82,7 +83,7 @@ header {
 }
 #map {
     height: 100%;
-    width: 100%;
+    width: 50%;
 }
 #loader {
     position: fixed;
