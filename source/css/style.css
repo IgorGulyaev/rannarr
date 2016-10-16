@@ -1,3 +1,8 @@
+.navbar-brand {
+    float: none;
+}
+
+
 #demo {
     display: -webkit-box;
     display: -moz-box;

@@ -9,16 +9,8 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         $arrDBs = array();
-        /*echo $row["id"]. "<br>";
-        echo $row["name"]. "<br>";
-        echo $row["description"]. "<br>";
-        echo $row["start_time"]. "<br>";
-        echo $row["longitude"]. "<br>";
-        echo $row["latitude"]. "<br>";
-        echo $row["cover"]. "<br>";*/
         array_push($arrDBs,$row["id"],$row["name"],$row["description"],$row["start_time"],$row["longitude"],$row["latitude"],$row["cover"]);
         array_push($arrDB,$arrDBs);
-        /*echo '<div><img src="' . $row["cover"] . '" style="display: block;width: 100%;height: auto;" /><b>' . $row["name"]. '</b><p style="color:lightgray">' . $row["start_time"] . '</p><p>' . $row["description"] . '</p></div>';*/
     }
 } else {
     echo "0 results";
@@ -28,7 +20,8 @@ $arrDBi = array_slice($arrDB, 1);
 
 ?>
 <script>
-    var arrDB = <?php print(json_encode($arrDBi)); ?>;
+    var arrDB;
+    // arrDB = <?php print(json_encode($arrDBi)); ?>;
     console.log(arrDB);
 </script>
 

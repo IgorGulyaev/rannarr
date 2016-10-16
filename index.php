@@ -2,7 +2,7 @@
 require_once 'connect.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
-<html>
+<html ng-app>
 <head>
 	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251" />
 	<meta content="yes" name="apple-mobile-web-app-capable" />
@@ -14,11 +14,11 @@ require_once 'connect.php';
 	<link rel="stylesheet" href="source/css/tether.min.css">
 	<link rel="stylesheet" href="source/css/tether-theme-arrows.min.css">
 	<link rel="stylesheet" href="source/css/tether-theme-basic.min.css">
+	<link rel="stylesheet" href="source/css/bootstrap-theme.css">
 	<link rel="stylesheet" href="source/css/style.css">
 	<script src="source/js/tether.min.js"></script>
-	<script src="source/js/react.js"></script>
-	<script src="source/js/react-dom.js"></script>
-	<script src="source/js/browser.min.js"></script>
+	<script src="source/js/angular.js"></script>
+	<script src="source/js/backbone.js"></script>
 	<script src="source/js/bootstrap.min.js"></script>
 	<script>
 		window.fbAsyncInit = function() {
@@ -49,6 +49,8 @@ require_once 'connect.php';
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="wrapper">
 
+	<?php include 'assets/templates/header.php'; ?>
+
 	<div class="content">
 
 		<script src="fb.js"></script>
@@ -59,7 +61,7 @@ require_once 'connect.php';
           the FB.login() function when clicked.
         -->
 
-		<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 		</fb:login-button>
 
 		<div id="status">
@@ -72,7 +74,7 @@ require_once 'connect.php';
 			data-show-faces="true">
 		</div>
 
-		<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>
+		<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>-->
 		
 	</div>
 
