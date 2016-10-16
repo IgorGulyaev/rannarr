@@ -9,6 +9,9 @@ require_once 'connect.php';
 	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
 	<TITLE>ZEN Events</TITLE>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="source/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="source/css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="source/css/jquery-ui.theme.min.css">
 	<link rel="stylesheet" href="source/css/bootstrap.min.css">
 	<link rel="stylesheet" href="source/css/bootstrap.min.css.map">
 	<link rel="stylesheet" href="source/css/tether.min.css">
@@ -16,6 +19,7 @@ require_once 'connect.php';
 	<link rel="stylesheet" href="source/css/tether-theme-basic.min.css">
 	<link rel="stylesheet" href="source/css/bootstrap-theme.css">
 	<link rel="stylesheet" href="source/css/style.css">
+	<script src="source/js/jquery-ui.min.js"></script>
 	<script src="source/js/tether.min.js"></script>
 	<script src="source/js/angular.js"></script>
 	<script src="source/js/backbone.js"></script>
@@ -75,24 +79,15 @@ require_once 'connect.php';
 		</div>
 
 		<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>-->
-		
-	</div>
 
-	<h2>Look for events</h2>
-	<label for="city">Enter City</label>
-	<input id="city" type="text" />
-	<div class="range">
-		<input id="range" type="range" min="0" max="100" step="1" value="20">
-	</div>
-	<button type="button" onclick="mapGo();">Request data</button>
-	<button type="button" onclick="resetDoc();">Reset data</button>
+		<div id="map"></div>
+		<p id="demo">
+			<?php
+			include 'init.php';
+			?>
+		</p>
 
-	<div id="map"></div>
-	<p id="demo">
-	<?php
-	include 'init.php';
-	?>
-	</p>
+	</div>
 
 	<script src="map.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeCoj8w8dKz4pJheRS-omzCchD6EaYhOE&signed_in=true&libraries=places&callback=initMap"
