@@ -21,7 +21,7 @@ $arrDBi = array_slice($arrDB, 1);
 ?>
 <script>
     var arrDB;
-    // arrDB = <?php print(json_encode($arrDBi)); ?>;
+    arrDB = <?php print(json_encode($arrDBi)); ?>;
     console.log(arrDB);
 </script>
 
