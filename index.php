@@ -96,5 +96,8 @@ require_once 'connect.php';
 
 </div>
 <div id="loader"></div>
+<script>
+	mapGo();
+</script>
 </body>
 </html>

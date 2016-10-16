@@ -44,7 +44,7 @@
                 <div class="range">
                     <input id="range" type="range" min="0" max="100" step="1" value="20">
                 </div>
-                <button type="button" onclick="mapGo();">Request data</button>
+                <!--<button type="button" onclick="mapGo();">Request data</button>-->
                 <button type="button" onclick="resetDoc();">Reset data</button>
                 <script>
                     $( function() {
