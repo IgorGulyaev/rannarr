@@ -142,10 +142,10 @@ body.map-on:not(.list-on) #map {
     width: 100%;
 }
 body:not(.list-on) #demo {
-    left: 100%;
+    margin-right: -100vw;
 }
 body:not(.map-on) #map {
-    left: -100%;
+    margin-left: -100vw;
 }
 #loader {
     position: fixed;
