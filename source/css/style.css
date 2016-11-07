@@ -135,17 +135,18 @@ header {
     transition: all 500ms ease-out;
 }
 
-body.list-on:not(.map-on) #demo {
-    width: 100%;
-}
-body.map-on:not(.list-on) #map {
-    width: 100%;
+body:not(.list-on) #map {
+    width: 100vw;
 }
 body:not(.list-on) #demo {
-    margin-right: -100vw;
+    margin-right: -50vw;
+}
+body:not(.map-on) #demo {
+    width: 100vw;
 }
 body:not(.map-on) #map {
-    margin-left: -100vw;
+    width: 0;
+    margin-left: -50vw;
 }
 #loader {
     position: fixed;
