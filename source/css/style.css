@@ -155,6 +155,9 @@ body:not(.list-on) #demo {
 body:not(.map-on) #demo {
     width: 100vw;
 }
+body:not(.map-on) #demo > div {
+    width: 25%;
+}
 body:not(.map-on) #map {
     margin-left: -50vw;
 }
