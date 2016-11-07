@@ -122,6 +122,8 @@ header {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
     -webkit-transition: all 500ms ease-out;
     -moz-transition: all 500ms ease-out;
     -ms-transition: all 500ms ease-out;
