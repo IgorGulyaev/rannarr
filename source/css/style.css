@@ -102,6 +102,8 @@ header {
 }
 
 #demo {
+    position: relative;
+    left: 50%;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -135,16 +137,17 @@ header {
 }
 
 body.list-on:not(.map-on) #demo {
+    left: 0;
     width: 100%;
 }
 body.map-on:not(.list-on) #map {
     width: 100%;
 }
 body:not(.list-on) #demo {
-    width: 0;
+    left: 100%;
 }
 body:not(.map-on) #map {
-    width: 0;
+    left: -100%;
 }
 #loader {
     position: fixed;
