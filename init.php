@@ -20,8 +20,9 @@ $arrDBi = array_slice($arrDB, 1);
 
 ?>
 <script>
+    document.body.classList.add("list-on");
     var arrDB;
-    arrDB = <?php print(json_encode($arrDBi)); ?>;
+    /*arrDB = <?php print(json_encode($arrDBi)); ?>;*/
     console.log(arrDB);
 </script>
 

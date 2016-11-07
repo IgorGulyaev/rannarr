@@ -107,8 +107,9 @@ function loadDoc() {
 }*/
 
 function mapGo() {
-    console.log('mapGo execute');
-    console.log(arrDB);
+    document.body.classList.add("map-on");
+    /*console.log('mapGo execute');
+    console.log(arrDB);*/
     for (var i = 0; i < arrDB.length; i++) {
         var mark = arrDB[i];
         jQuery('#demo').append('<div><img src="' + mark[6] + '" style="display: block;width: 100%;height: auto;" /><b>' + mark[1] + '</b><p style="color:lightgray">' + mark[3] + '</p><p>' + mark[2] + '</p></div>');

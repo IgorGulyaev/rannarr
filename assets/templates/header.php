@@ -41,16 +41,21 @@
             <div class="event-form">
                 <input type="text" id="datepicker">
                 <input id="city" type="text" />
-                <div class="range">
+                <!--<div class="range">
                     <input id="range" type="range" min="0" max="100" step="1" value="20">
-                </div>
+                </div>-->
                 <!--<button type="button" onclick="mapGo();">Request data</button>-->
-                <button type="button" onclick="resetDoc();">Reset data</button>
+                <!--<button type="button" onclick="resetDoc();">Reset data</button>-->
                 <script>
                     $( function() {
                         $( "#datepicker" ).datepicker();
                     } );
                 </script>
+            </div>
+
+            <div class="view-switcher">
+                <span id="mapToggle" class="active" onclick="mapToggleFn();">M</span>
+                <span id="listToggle" class="active" onclick="listToggleFn();">L</span>
             </div>
 
             <ul class="nav navbar-nav navbar-right">

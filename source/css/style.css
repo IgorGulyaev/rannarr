@@ -2,11 +2,25 @@ html, body {
     height: 100%;
 }
 
+[type="text"] {
+    height: 40px;
+    padding: 0 25px;
+    border: none;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: darkgrey;
+    color: #fff;
+    font-size: 16px;
+    line-height:40px;
+}
+
 nav.navbar {
     margin: 0;
 }
 .navbar-toggle {
     display: block !important;
+    float: left;
 }
 .navbar .navbar-collapse {
     position: fixed;
@@ -28,6 +42,10 @@ nav.navbar {
 
 .navbar-brand {
     float: none;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 60px;
+    text-transform: uppercase;
 }
 
 .wrapper {
@@ -52,7 +70,26 @@ header {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    padding: 10px 0;
 }
+
+.view-switcher span {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: darkgrey;
+    color: #fff;
+    font-size: 16px;
+    line-height:40px;
+    text-align: center;
+}
+.view-switcher span.active {
+    background-color: lightseagreen;
+}
+.view-switcher {}
 
 .content {
     flex: 2;
@@ -73,6 +110,11 @@ header {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 50%;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
 }
 #demo > div {
     width: 50%;
@@ -85,6 +127,18 @@ header {
 #map {
     height: 100%;
     width: 50%;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+body.list-on:not(.map-on) #demo {
+    width: 100%;
+}
+body.map-on:not(.list-on) #map {
+    width: 100%;
 }
 #loader {
     position: fixed;

@@ -90,6 +90,7 @@ require_once 'connect.php';
 	</div>
 
 	<script src="map.js"></script>
+	<script src="source/js/script.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeCoj8w8dKz4pJheRS-omzCchD6EaYhOE&signed_in=true&libraries=places&callback=initMap"
 			async defer></script>
 

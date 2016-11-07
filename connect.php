@@ -6,9 +6,9 @@ $dbname = "itef_eventsdevdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-mysqli_query("SET NAMES 'utf8'");
-mysqli_query("SET CHARACTER SET 'utf8'");
-mysqli_query("SET SESSION collation_connection = 'utf8_general_ci'");
+// mysqli_query("SET NAMES 'utf8'");
+// mysqli_query("SET CHARACTER SET 'utf8'");
+// mysqli_query("SET SESSION collation_connection = 'utf8_general_ci'");
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
