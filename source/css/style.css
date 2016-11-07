@@ -135,13 +135,19 @@ header {
     padding: 15px;
     border: 1px solid dimgrey;
 }
+body.map-on #demo > div:nth-child(4n-3) {
+    background-color: gainsboro;
+}
+body.map-on #demo > div:nth-child(4n-4) {
+    background-color: gainsboro;
+}
+
 #demo > div:nth-child(4n-3) {
     background-color: gainsboro;
 }
 #demo > div:nth-child(4n-4) {
     background-color: gainsboro;
 }
-
 body:not(.map-on) #demo > div:nth-child(8n-2) {
     background-color: gainsboro;
 }
