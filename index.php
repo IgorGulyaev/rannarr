@@ -79,13 +79,10 @@ require_once 'connect.php';
 		</div>
 
 		<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>-->
-
+		<?php include 'init.php'; ?>
 		<div id="map"></div>
-		<p id="demo">
-			<?php
-			include 'init.php';
-			?>
-		</p>
+		<div id="demo">
+		</div>
 
 	</div>
 
