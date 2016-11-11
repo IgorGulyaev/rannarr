@@ -57,6 +57,51 @@ nav.navbar .container-fluid {
     text-transform: uppercase;
 }
 
+#sideMenu {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-between;
+    background-color: #3e3f3a;
+    -webkit-box-shadow: 0 0 6px #222;
+    -moz-box-shadow: 0 0 6px #222;
+    box-shadow: 0 0 6px #222;
+}
+#sideMenu:before,
+#sideMenu:after {
+    display: none;
+}
+#sideMenu .nav > li {
+    width: 100%;
+}
+#sideMenu .nav > li.main-nav.last {
+    margin-bottom: 50px;
+}
+#sideMenu .nav > li a {
+    padding-right: 20px;
+    padding-left: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+#sideMenu .nav > li:not(.main-nav) a {
+    font-size: 14px;
+    text-transform: none;
+}
+
+.copyright {
+    padding: 15px;
+    color: #d9d9d9;
+    font-size: 14px;
+    text-align: center;
+}
+#sideMenu {}
+
 .wrapper {
     height: 100%;
     display: -webkit-box;
