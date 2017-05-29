@@ -36,7 +36,7 @@ function object_to_array($obj) {
 /*include 'login.php';*/
 
 /*$access_token = file_get_contents('https://graph.facebook.com/oauth/access_token?client_id=1909067872653575&client_secret=bb71b82ba060f18a84363cf05552327c&grant_type=client_credentials');*/
-$access_token = 'EAAbISYBm0QcBALG5fRxa0oHZAtsl4ZCRn2zFOQzmiR5Jn8RHCuZCGjsXr3yaXkCxNraMtTqUbHiBt93C5rz4cQhALD3ncEN98XNOyZBCPxKmDgdprmNrJtS5OKXhMZAXWMYTwZBwlOSy1hkdVcZCy6RZBYo1r65N3CoZD';
+$access_token = 'EAAbISYBm0QcBANVgdGJIQgxLETocSa7ooeetOXb7Ar6nUB0CJiLwGTwu66ZAHcCeZAYpnmvJuYVY9aQydMJWZAyQSQDlVNlDyFjUhoK2v4yoVAZC5fIj4DI0VgV8B73IhFVdqabylacTjZAdw8KWdW9TpKovthy6WXuoZCFMZCtRZBMiQZAGPQIPvvpxu03qIPTgZD';
 /*$access_token = 'EAACEdEose0cBAGTwjElLGfrk5y6FEMrzQfh8D1aRk4hUC0Nipcm4MVlyOwu8iTx0uhyGxZBQLRK0iCmP2Eg5dZCSDMtPhYCus5x7y2XdyZAO3WEclvKuRFoX7894b1fgpfZCQK7ZAFv2MVDZBj8ngK8TmU0dcXM9JDNZA9yG7eg8QZDZD';*/
 
 $fb = new Facebook\Facebook([
